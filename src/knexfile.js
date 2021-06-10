@@ -3,7 +3,7 @@ import path from 'path'
 
 module.exports = {
 
-  development: {
+  main: {
     client: 'mysql',
     connection: {
       host: '127.0.0.1',
