@@ -4,10 +4,18 @@
   "description": "Projeto I",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "start": "nodemon index.js",
     "migrate:run": "knex --knexfile knexfile.ts --cwd src/ --env main migrate:latest ",
     "seed:run": "knex --knexfile knexfile.ts --cwd src/--env main seed:run "
 
+=======
+    "start": "nodemon ./index.js",
+    "migrate:run": "knex --knexfile knexfile.ts --cwd src/ --env development migrate:latest ",
+    "seed:run": "knex --knexfile knexfile.ts --cwd src/ --env development seed:run ",
+    "migrate:rollback": "knex --knexfile knexfile.ts --cwd src/ --env development migrate:rollback --all",
+    "migrate:clean": "npm run migrate:rollback && npm run migrate:run && npm run seed:run"
+>>>>>>> 524a16c8d59cbf02be99aaa41ee2f2ce30e2bfa7
   },
   "author": "",
   "license": "ISC",

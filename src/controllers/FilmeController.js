@@ -1,5 +1,5 @@
-const knex = require ('../database/conections')
 
+const knex = require ('../database/conections')
 module.exports = {
     async index(req, res) {
         const results = await knex('filmes')
