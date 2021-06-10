@@ -1,5 +1,5 @@
-import knex from '../database/connection'
-const knex = require ('../database')
+
+const knex = require ('../database/connections')
 
 module.exports = {
     async index(req, res) {

@@ -9,7 +9,6 @@
     "seed:run": "knex --knexfile knexfile.ts --cwd src/ --env development seed:run ",
     "migrate:rollback": "knex --knexfile knexfile.ts --cwd src/ --env development migrate:rollback --all",
     "migrate:clean": "npm run migrate:rollback && npm run migrate:run && npm run seed:run"
-
   },
   "author": "",
   "license": "ISC",
